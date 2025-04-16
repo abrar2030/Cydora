@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/animated/styles.css">
 </head>
 <body>
     <!-- Preloader -->
@@ -85,7 +86,9 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-wrapper">
-                    <img src="assets/hero-image.png" alt="Cloud and DevOps Engineering" class="hero-img">
+                    <div class="particles-container">
+                        <canvas id="particles-canvas"></canvas>
+                    </div>
                     <div class="hero-image-decoration"></div>
                 </div>
             </div>
@@ -1078,5 +1081,6 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="assets/animated/particles.js"></script>
 </body>
 </html>
