@@ -1576,6 +1576,45 @@ body.dark-theme .certification-id {
     color: var(--gray-light);
 }
 
+.certification-separator {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.certification-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.certification-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.certification-link i {
+    font-size: 0.9rem;
+}
+
+.certification-link span {
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
 /* ===== RECOMMENDATIONS SECTION ===== */
 .recommendations-grid {
     display: grid;
@@ -2102,4 +2141,26 @@ textarea.form-control {
         flex-direction: column;
         gap: var(--spacing-4);
     }
+}
+
+.contact-social .footer-social-link,
+.footer-social .footer-social-link {
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-social .footer-social-link:first-child,
+.footer-social .footer-social-link:first-child {
+    margin-left: 0;
+}
+
+.contact-social .footer-social-link:last-child,
+.footer-social .footer-social-link:last-child {
+    margin-right: 0;
+}
+
+.contact-social .footer-social-link:hover,
+.footer-social .footer-social-link:hover {
+    transform: translateY(-3px);
+    color: var(--primary-color);
 }
